@@ -64,4 +64,5 @@ Game flow:
 
 Improvements:
 -Prison system
--Hunger / soife
+-Hunger / thirst
+
