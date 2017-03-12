@@ -5,7 +5,8 @@ Read [WhatIsThisProject?](https://github.com/Balthyx/Arma-III-Civil-War/blob/mas
 
 For the moment, we have only the mission directory : 
   * __mission.sqm :__ The mission file for arma III
-  * __loadout_rebel.sqf :__ Called by init in all rebels units. Change their faces, look like civils.
-  * __loadout_civil.sqf :__ Called by init in all rebels & civils units. Randomis their cloths.
+  * __loadout_rebel.sqf :__ Called by init in all rebels units. Change their faces, look like civils. Add somes random weapons.
+  * __loadout_civil.sqf :__ Called by init in all rebels & civils units. Randomis their cloths. Add somes backpack
+  * __init_[faction/group] :__ 
 
 Sorry for my bad english :T  oopa

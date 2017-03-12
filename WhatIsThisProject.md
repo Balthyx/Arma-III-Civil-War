@@ -41,7 +41,7 @@ Points of interest to capture.
 
 ###Special areas:
 
-  * Armurerie: Protected by the __government__, big source of arms for the __rebels__.
+  * Armurerie: Protected by the __government__, big source of weapons for the __rebels__.
   * Weapons cache: Random spawn at the start of the game, small source of weapons.
   * Industries: source of money for the faction that controls it.
   * Ressources camp: Provided resources for industries.
