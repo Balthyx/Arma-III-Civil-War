@@ -1,0 +1,1 @@
+nul = _this execVM "loadout_civil.sqf";
