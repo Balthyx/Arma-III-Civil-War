@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=867;
+		nextID=872;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11627.866,49.91288,11889.391};
-		dir[]={-0.82714665,-0.39597911,0.39897874};
-		up[]={-0.35669532,0.91823214,0.17205504};
-		aside[]={0.43448886,-4.6245987e-007,0.90076703};
+		pos[]={9897.625,134.09755,11382.831};
+		dir[]={0.12639235,-0.30450597,0.94419521};
+		up[]={0.040410567,0.95248282,0.30187085};
+		aside[]={0.99126428,-7.7765435e-008,-0.13269404};
 	};
 };
 binarizationWanted=0;
@@ -346,20 +346,27 @@ class Mission
 		briefingName="Civil War";
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
+		startWeather=0.46511236;
+		startWind=0.33440238;
+		startWindDir=284;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		startGust=0.3213315;
+		forecastWeather=0.55225277;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
-		month=6;
-		day=24;
-		hour=12;
-		minute=0;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		forecastGust=0.13398029;
+		forecastWindDir=236;
+		windForced=1;
+		year=2017;
+		month=3;
+		day=12;
+		hour=15;
+		minute=-25;
+		startFogBase=-60.016846;
+		forecastFogBase=-8.6290283;
+		startFogDecay=0.054279167;
+		forecastFogDecay=0;
 	};
 	class Entities
 	{
@@ -2164,6 +2171,7 @@ class Mission
 					};
 					id=570;
 					type="B_Soldier_F";
+					atlOffset=2.8610229e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4191,6 +4199,7 @@ class Mission
 					};
 					id=257;
 					type="I_Soldier_M_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8365,7 +8374,7 @@ class Mission
 			};
 			id=820;
 			type="Box_FIA_Wps_F";
-			atlOffset=-4.6730042e-005;
+			atlOffset=-4.5776367e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8554,7 +8563,7 @@ class Mission
 			};
 			id=857;
 			type="C_Hatchback_01_F";
-			atlOffset=0.34710598;
+			atlOffset=0.3470993;
 		};
 		class Item65
 		{

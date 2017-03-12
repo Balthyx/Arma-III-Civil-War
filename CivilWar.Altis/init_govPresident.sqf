@@ -26,3 +26,12 @@ _this linkItem "ItemCompass";
 _this linkItem "ItemWatch";
 _this linkItem "ItemRadio";
 _this linkItem "ItemGPS";
+
+
+//test
+_buycar = _this addAction ["Buy a car",_fbuycar];
+
+_fbuycar{
+	govbank = govbank - 500;
+	
+}
