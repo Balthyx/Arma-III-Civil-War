@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9897.625,134.09755,11382.831};
-		dir[]={0.12639235,-0.30450597,0.94419521};
-		up[]={0.040410567,0.95248282,0.30187085};
-		aside[]={0.99126428,-7.7765435e-008,-0.13269404};
+		pos[]={8996.4639,63.813442,11933.388};
+		dir[]={0.75857514,-0.53111887,0.37774897};
+		up[]={0.47545671,0.84726942,0.23676194};
+		aside[]={0.44581202,3.2153912e-007,-0.89525717};
 	};
 };
 binarizationWanted=0;
@@ -502,8 +502,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9011.5605,29.370579,11940.824};
-						angles[]={0,1.9060394,0};
+						position[]={9025.4707,23.702915,11965.177};
+						angles[]={0,1.9060391,0};
 					};
 					side="West";
 					flags=7;
@@ -553,6 +553,7 @@ class Mission
 					};
 					id=72;
 					type="B_officer_F";
+					atlOffset=0.00041770935;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -582,11 +583,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9012.0781,29.322109,11941.812};
+						position[]={9025.9883,23.672625,11966.164};
 						angles[]={0,1.7205807,0};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="nul = this execVM ""init_gov.sqf"";nul = this execVM ""init_govLieutenant.sqf"";";
@@ -708,7 +709,6 @@ class Mission
 					};
 					id=73;
 					type="B_Soldier_SL_F";
-					atlOffset=3.482296;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -738,11 +738,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9012.2129,29.346575,11939.422};
+						position[]={9026.123,23.693087,11963.774};
 						angles[]={0,1.7205807,0};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="nul = this execVM ""init_gov.sqf"";nul = this execVM ""init_govLieutenant.sqf"";";
@@ -864,7 +864,6 @@ class Mission
 					};
 					id=75;
 					type="B_Soldier_SL_F";
-					atlOffset=3.506958;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -894,6 +893,7 @@ class Mission
 			{
 			};
 			id=71;
+			atlOffset=0.00041770935;
 			class CustomAttributes
 			{
 				class Attribute0
