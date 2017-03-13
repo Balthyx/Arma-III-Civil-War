@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=872;
+		nextID=873;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8996.4639,63.813442,11933.388};
-		dir[]={0.75857514,-0.53111887,0.37774897};
-		up[]={0.47545671,0.84726942,0.23676194};
-		aside[]={0.44581202,3.2153912e-007,-0.89525717};
+		pos[]={9044.2637,26.833271,11960.464};
+		dir[]={-0.26774481,-0.34393674,0.90013438};
+		up[]={-0.098072119,0.93895674,0.32971674};
+		aside[]={0.95860988,-8.1490725e-010,0.28513676};
 	};
 };
 binarizationWanted=0;
@@ -44,13 +44,14 @@ addons[]=
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
 	"A3_Soft_F_Gamma_Hatchback_01",
 	"A3_Soft_F_Offroad_01",
-	"A3_Soft_F_MRAP_01"
+	"A3_Soft_F_MRAP_01",
+	"A3_Structures_F_Civ_Camping"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -97,6 +98,13 @@ class AddonsMetaData
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -370,7 +378,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=68;
+		items=69;
 		class Item0
 		{
 			dataType="Trigger";
@@ -502,7 +510,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9025.4707,23.702915,11965.177};
+						position[]={9025.4697,23.702532,11965.177};
 						angles[]={0,1.9060391,0};
 					};
 					side="West";
@@ -510,7 +518,7 @@ class Mission
 					class Attributes
 					{
 						init="nul = this execVM ""init_gov.sqf"";nul = this execVM ""init_govPresident.sqf"";";
-						name="presisident";
+						name="president";
 						description="El presidente !";
 						isPlayable=1;
 						class Inventory
@@ -553,7 +561,6 @@ class Mission
 					};
 					id=72;
 					type="B_officer_F";
-					atlOffset=0.00041770935;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -893,7 +900,6 @@ class Mission
 			{
 			};
 			id=71;
-			atlOffset=0.00041770935;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8660,6 +8666,24 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item68
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9041.6416,23.933945,11970.536};
+				angles[]={6.257843,4.8694687,6.2025514};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="nul = this execVM ""init_govStore"";";
+			};
+			id=872;
+			type="Land_ToiletBox_F";
+			atlOffset=0.00018692017;
 		};
 	};
 };
