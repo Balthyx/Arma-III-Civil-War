@@ -1,5 +1,5 @@
 _fbuy = {
-	private _buyID = param[0];// The class name of the buyed object.
+	private _buyID = (_this select 3) select 0;// The class name of the buyed object.
 	private "_object";
 	_object=["B_Heli_Light_01_F","B_MRAP_01_F"]; //List of Class name of buyable object. Example : https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
 	private "_price";
@@ -17,4 +17,4 @@ _fbuy = {
 	};
 };
 
-_buycar = _this addAction ["Buy a car",["B_MRAP_01_F"] call _fbuy];
+_buycar = _this addAction ["Buy a car",_fbuy,["B_MRAP_01_F"]];

@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={9044.2637,26.833271,11960.464};
-		dir[]={-0.26774481,-0.34393674,0.90013438};
-		up[]={-0.098072119,0.93895674,0.32971674};
-		aside[]={0.95860988,-8.1490725e-010,0.28513676};
+		dir[]={-0.75194108,-0.31581512,0.57885015};
+		up[]={-0.25029984,0.94878536,0.19268528};
+		aside[]={0.61007094,-5.3958502e-008,0.79249573};
 	};
 };
 binarizationWanted=0;
@@ -8672,18 +8672,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9041.6416,23.933945,11970.536};
+				position[]={9041.6416,23.933481,11970.536};
 				angles[]={6.257843,4.8694687,6.2025514};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="nul = this execVM ""init_govStore"";";
+				init="nul = this execVM ""init_govStore.sqf"";";
 			};
 			id=872;
 			type="Land_ToiletBox_F";
-			atlOffset=0.00018692017;
+			atlOffset=0.16900063;
 		};
 	};
 };
