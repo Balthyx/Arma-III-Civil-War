@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=903;
+		nextID=919;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4;
+		nextID=5;
 	};
 	class Camera
 	{
-		pos[]={9322.3555,43.556705,12139.224};
-		dir[]={-0.89807016,-0.36167192,-0.25081027};
-		up[]={-0.34840363,0.93226331,-0.097298212};
-		aside[]={-0.26901412,-3.1641684e-007,0.9632622};
+		pos[]={9283.3584,18.839186,12116.806};
+		dir[]={-0.94527292,-0.27937886,0.16928715};
+		up[]={-0.27509686,0.96013492,0.049273252};
+		aside[]={0.17631474,-2.2462336e-006,0.98445797};
 	};
 };
 binarizationWanted=0;
@@ -48,14 +48,13 @@ addons[]=
 	"A3_Soft_F_Gamma_Hatchback_01",
 	"A3_Soft_F_Offroad_01",
 	"A3_Soft_F_MRAP_01",
-	"A3_Structures_F_Civ_Camping",
 	"A3_Weapons_F_Bootcamp_Ammoboxes"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -99,13 +98,6 @@ class AddonsMetaData
 			url="http://www.arma3.com";
 		};
 		class Item6
-		{
-			className="A3_Structures_F";
-			name="Arma 3 - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item7
 		{
 			className="A3_Weapons_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Weapons and Accessories";
@@ -8504,25 +8496,6 @@ class Mission
 		};
 		class Item64
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9041.6416,23.933481,11970.536};
-				angles[]={6.257843,4.8694687,6.2025514};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="nul = this execVM ""init_govStore.sqf"";";
-				name="govStoreV";
-			};
-			id=872;
-			type="Land_ToiletBox_F";
-			atlOffset=0.16900063;
-		};
-		class Item65
-		{
 			dataType="Layer";
 			name="Caches";
 			class Entities
@@ -8699,7 +8672,62 @@ class Mission
 				};
 			};
 			id=885;
-			atlOffset=188.03333;
+			atlOffset=-0.046536446;
+		};
+		class Item65
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9277.541,16.547438,12118.109};
+						angles[]={0,0.94247776,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this disableAI ""move"";nul = this execVM ""init_govStore.sqf"";";
+					};
+					id=918;
+					type="C_man_w_worker_F";
+					atlOffset=0.2159996;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=917;
+			atlOffset=0.2159996;
 		};
 	};
 };
