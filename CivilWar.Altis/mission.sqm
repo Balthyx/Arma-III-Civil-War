@@ -8,11 +8,11 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=919;
+		nextID=937;
 	};
 	class MarkerIDProvider
 	{
-		nextID=4;
+		nextID=5;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9283.3584,18.839186,12116.806};
-		dir[]={-0.94527292,-0.27937886,0.16928715};
-		up[]={-0.27509686,0.96013492,0.049273252};
-		aside[]={0.17631474,-2.2462336e-006,0.98445797};
+		pos[]={9281.7695,46.722656,12155.735};
+		dir[]={0.44015217,-0.67585808,-0.59138358};
+		up[]={0.40352914,0.73699015,-0.54218805};
+		aside[]={-0.80229974,-2.3895991e-006,-0.5971235};
 	};
 };
 binarizationWanted=0;
@@ -48,13 +48,15 @@ addons[]=
 	"A3_Soft_F_Gamma_Hatchback_01",
 	"A3_Soft_F_Offroad_01",
 	"A3_Soft_F_MRAP_01",
-	"A3_Weapons_F_Bootcamp_Ammoboxes"
+	"A3_Weapons_F_Bootcamp_Ammoboxes",
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Supplies_F_Exp_Ammoboxes"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=9;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -101,6 +103,20 @@ class AddonsMetaData
 		{
 			className="A3_Weapons_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Supplies_F_Exp";
+			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -374,7 +390,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=66;
+		items=68;
 		class Item0
 		{
 			dataType="Trigger";
@@ -506,7 +522,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9301.6992,16.264315,12141.676};
+						position[]={9288.5889,16.326654,12148.635};
 						angles[]={0,1.9060391,0};
 					};
 					side="West";
@@ -557,6 +573,7 @@ class Mission
 					};
 					id=72;
 					type="B_officer_F";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -586,7 +603,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9302.2178,16.239021,12142.663};
+						position[]={9289.1074,16.325962,12149.622};
 						angles[]={0,1.7205807,0};
 					};
 					side="West";
@@ -712,6 +729,7 @@ class Mission
 					};
 					id=73;
 					type="B_Soldier_SL_F";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -741,7 +759,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9302.3525,16.262867,12140.273};
+						position[]={9289.2422,16.325781,12147.232};
 						angles[]={0,1.7205807,0};
 					};
 					side="West";
@@ -896,6 +914,7 @@ class Mission
 			{
 			};
 			id=71;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -932,8 +951,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9302.9941,16.253176,12132.667};
-						angles[]={0,1.3896487,0};
+						position[]={9297.8916,16.314247,12129.569};
+						angles[]={0,0.8835032,0};
 					};
 					side="West";
 					flags=7;
@@ -1073,8 +1092,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9300.7051,16.297319,12134.329};
-						angles[]={0,1.413717,0};
+						position[]={9295.084,16.317991,12129.913};
+						angles[]={0,0.9075712,0};
 					};
 					side="West";
 					flags=5;
@@ -1192,8 +1211,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9300.8271,16.294886,12133.069};
-						angles[]={0,1.413717,0};
+						position[]={9295.8008,16.317038,12128.871};
+						angles[]={0,0.90757155,0};
 					};
 					side="West";
 					flags=5;
@@ -1282,6 +1301,7 @@ class Mission
 					};
 					id=558;
 					type="B_Soldier_F";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1311,8 +1331,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9301.0713,16.289995,12131.938};
-						angles[]={0,1.413717,0};
+						position[]={9296.5635,16.316021,12128};
+						angles[]={0,0.90757155,0};
 					};
 					side="West";
 					flags=5;
@@ -1401,6 +1421,7 @@ class Mission
 					};
 					id=560;
 					type="B_Soldier_F";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1430,8 +1451,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9301.2285,16.286865,12130.8};
-						angles[]={0,1.413717,0};
+						position[]={9297.2529,16.314476,12127.08};
+						angles[]={0,0.90757155,0};
 					};
 					side="West";
 					flags=5;
@@ -1520,6 +1541,7 @@ class Mission
 					};
 					id=562;
 					type="B_Soldier_F";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1549,8 +1571,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9301.4199,16.283037,12129.868};
-						angles[]={0,1.413717,0};
+						position[]={9297.8721,16.312687,12126.358};
+						angles[]={0,0.90757155,0};
 					};
 					side="West";
 					flags=5;
@@ -1639,6 +1661,7 @@ class Mission
 					};
 					id=564;
 					type="B_Soldier_F";
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8686,21 +8709,41 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9277.541,16.547438,12118.109};
-						angles[]={0,0.94247776,0};
+						position[]={9293.0068,16.320761,12127.574};
+						angles[]={0,0.75049156,0};
 					};
 					side="Civilian";
 					flags=7;
 					class Attributes
 					{
-						init="this disableAI ""move"";nul = this execVM ""init_govStore.sqf"";";
+						init="this disableAI ""move"";nul = this execVM ""init_govGarage.sqf"";";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
 					};
 					id=918;
 					type="C_man_w_worker_F";
-					atlOffset=0.2159996;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -8719,7 +8762,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -8727,7 +8789,84 @@ class Mission
 			{
 			};
 			id=917;
-			atlOffset=0.2159996;
+		};
+		class Item66
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9303.3584,16.235729,12140.018};
+				angles[]={0.012007865,4.066617,6.2551899};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="spawnGovStore";
+			};
+			id=933;
+			type="Land_HelipadCircle_F";
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9285.2959,16.928133,12125.823};
+				angles[]={0,3.9444444,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="nul = this execVM ""init_govShop.sqf"";";
+				name="govStore";
+			};
+			id=936;
+			type="Box_NATO_Equip_F";
+			atlOffset=0.00043869019;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""FirstAidKit""],[1]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };

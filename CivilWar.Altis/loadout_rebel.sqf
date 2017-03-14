@@ -11,4 +11,5 @@ IF (_choosenWeapon < _percentOfArmedRebels)THEN{
 	_this addBackpack "B_AssaultPack_cbr";
 	_this addItemToBackpack "hgun_P07_F";
 	_this addItemToBackpack "16Rnd_9x21_Mag";
+	_this addItemToBackpack "16Rnd_9x21_Mag";
 };

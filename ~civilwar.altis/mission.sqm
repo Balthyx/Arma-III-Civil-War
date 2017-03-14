@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=934;
+		nextID=937;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9317.1553,29.47892,12146.529};
-		dir[]={-0.65921801,-0.5859642,-0.47151029};
-		up[]={-0.47663268,0.81028652,-0.34090692};
-		aside[]={-0.5818215,-2.8386421e-007,0.81346321};
+		pos[]={9293.4443,19.194481,12144.983};
+		dir[]={-0.53537369,-0.48003465,0.69511849};
+		up[]={-0.29294544,0.87719166,0.38036588};
+		aside[]={0.79235619,-3.919733e-006,0.61025673};
 	};
 };
 binarizationWanted=0;
@@ -49,13 +49,14 @@ addons[]=
 	"A3_Soft_F_Offroad_01",
 	"A3_Soft_F_MRAP_01",
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
-	"A3_Structures_F_Mil_Helipads"
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Supplies_F_Exp_Ammoboxes"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -109,6 +110,13 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Supplies_F_Exp";
+			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -382,7 +390,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=67;
+		items=68;
 		class Item0
 		{
 			dataType="Trigger";
@@ -8709,7 +8717,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this disableAI ""move"";nul = this execVM ""init_govStore.sqf"";";
+						init="this disableAI ""move"";nul = this execVM ""init_govGarage.sqf"";";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;
 					};
@@ -8799,6 +8807,67 @@ class Mission
 			};
 			id=933;
 			type="Land_HelipadCircle_F";
+		};
+		class Item67
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9285.2959,16.928133,12125.823};
+				angles[]={0,3.9444444,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="nul = this execVM ""init_govShop.sqf"";";
+				name="govStore";
+			};
+			id=936;
+			type="Box_NATO_Equip_F";
+			atlOffset=0.00043869019;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""FirstAidKit""],[1]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };
