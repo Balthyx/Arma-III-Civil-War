@@ -1,6 +1,5 @@
-//List of civile face, rebels are opfor, opfor have reconiseable face :c
+//List of civils face, rebels are opfor, opfor have reconiseable face :c
 _face=["GreekHead_A3_01","GreekHead_A3_02","GreekHead_A3_06","GreekHead_A3_04","GreekHead_A3_03","GreekHead_A3_05"];
-
 _percentOfArmedRebels=20;
 
 _choosenface =_face select (random (round (count _face)-1));

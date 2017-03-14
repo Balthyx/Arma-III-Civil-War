@@ -1,5 +1,5 @@
-_object=["B_Heli_Light_01_F","B_MRAP_01_F"]; //List of Class name of buyable object. Example : https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
-_price=[20000,5000]; //Price of the object in the table upstaire. '_object select n' have a price of '_price select n'
+_object=["B_MRAP_01_F","B_Heli_Light_01_F"]; //List of Class name of buyable object. Example : https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
+_price=[5,20]; //Price of the object in the table upstaire. '_object select n' have a price of '_price select n'
 
 _fbuyVehicle = {
 	if ((_this select 1) == president)THEN{
@@ -16,7 +16,7 @@ _fbuyVehicle = {
 
 //Auto-create an addAction for all _object
 for "_i" from 0 to (count _object)-1 do{
-	_p= format ["%1 $",_price select _i];
+	_p= format ["%1 k$",_price select _i];
 	_sentence= "Buy " + (_object select _i) + " for " + _p;
 	_this addAction [_sentence,_fbuyVehicle,[_i,_object,_price]];
 };

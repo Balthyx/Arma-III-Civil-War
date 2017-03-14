@@ -1,6 +1,7 @@
 nul = _this execVM "loadout_civil.sqf";
+setViewDistance 1500;//the game-area is ~ 2km wide, lets save some cpu
 
-setViewDistance 1500;
+
 // _UID = getPlayerUID _this; //Civil banking system
 // IF(_UID!="SP AI")THEN{	//Mmmh... I think I do it wrong...
 	
