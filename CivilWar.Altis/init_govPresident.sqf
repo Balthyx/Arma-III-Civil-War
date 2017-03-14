@@ -22,6 +22,7 @@ _this addWeapon "Binocular";
 
 comment "Add items";
 _this addItemToUniform "11Rnd_45ACP_Mag";
+_this addItemToUniform "11Rnd_45ACP_Mag";
 _this linkItem "ItemMap";
 _this linkItem "ItemCompass";
 _this linkItem "ItemWatch";
