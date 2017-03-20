@@ -10,4 +10,4 @@ rebelBank=0;	//Start money for the rebel side
 TRUCK_REWARD = 2; //reward in k$ for driving a truck in industri area
 
 resource=[resource_1,resource_2,resource_3,resource_4,resource_5,resource_6,resource_7,resource_8,resource_9];
-industries=["industrie_1","industrie_2","industrie_3"];
+industries=[Mindustrie1];
