@@ -1,7 +1,7 @@
 //This file is called in mission init, because I don't like the ingame editor
 
 nul = execVM "industrie.sqf";
-nul = this execVM "init_cache.sqf";
+nul = execVM "init_cache.sqf";
 //Bank, money is in $$
 govBank=25000; //Start money for the government side
 rebelBank=0;	//Start money for the rebel side

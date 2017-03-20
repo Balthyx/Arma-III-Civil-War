@@ -1,5 +1,5 @@
 //called in init.sqf
-if (is server)THEN{
+if (isServer)THEN{
 	EquipCache addItemCargoGlobal ["V_TacVest_brn",10];
 	EquipCache addItemCargoGlobal ["V_Press_F",3];
 	EquipCache addItemCargoGlobal ["ItemGPS",3];
