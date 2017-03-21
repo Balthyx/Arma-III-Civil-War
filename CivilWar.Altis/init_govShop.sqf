@@ -1,4 +1,4 @@
-//All pack are fill up here, an array with : [quantity(int),ItemID(string),...]
+//All pack are fill up here, is an array with : [quantity(int),ItemID(string),...]
 _securityPack=[6,"SMG_02_F",12,"30Rnd_9x21_Mag_SMG_02",1,"V_Press_F"];
 _milicePack=[6,"arifle_Katiba_C_F",12,"30Rnd_65x39_caseless_green_mag_Tracer"];
 _militaryPack=[4,"arifle_Katiba_ACO_F",1,"arifle_Katiba_GL_ACO_F",1,"arifle_Katiba_ARCO_F",12,"30Rnd_65x39_caseless_green",3,"1Rnd_HE_Grenade_shell",6,"HandGrenade",6,"SmokeShell"];
@@ -14,7 +14,7 @@ _fbuyItem = {
 	if ((_this select 1) == president)THEN{
 		private _price = (_this select 3) select 2;
 		private _objets = (_this select 3) select 1;
-		private _buyID = (_this select 3) select 0;// The n° of the buyed pack. In the order of _objet
+		private _buyID = (_this select 3) select 0;// The nÂ° of the buyed pack. In the order of _objet
 		private _pack = _objets select _buyID;
 			IF(govBank >= (_price select _buyID))THEN{//Have we enouth money ? $-$
 				govBank = govBank - (_price select _buyID);
