@@ -8,7 +8,7 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=1084;
+		nextID=1086;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=13;
 	};
 	class Camera
 	{
@@ -54,13 +54,14 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Soft_F_Gamma_Van_01",
 	"A3_Weapons_F_Exp_Rifles_AKS",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Characters_F_Exp_Civil"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -135,6 +136,13 @@ class AddonsMetaData
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -408,7 +416,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=90;
+		items=91;
 		class Item0
 		{
 			dataType="Group";
@@ -9152,7 +9160,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9261.6387,17.288532,12652.367};
+						position[]={9260.5449,16.757116,12639.351};
 					};
 					side="Civilian";
 					flags=7;
@@ -9389,6 +9397,7 @@ class Mission
 			};
 			id=1078;
 			type="C_Van_01_box_F";
+			atlOffset=-3.8146973e-006;
 		};
 		class Item87
 		{
@@ -9512,6 +9521,36 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item90
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9270.6709,16.605469,12627.924};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=1085;
+					type="C_man_sport_2_F";
+					atlOffset=-1.5258789e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1084;
+			atlOffset=-1.5258789e-005;
 		};
 	};
 };
