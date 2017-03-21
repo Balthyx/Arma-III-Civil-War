@@ -8,7 +8,7 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=1082;
+		nextID=1084;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class Camera
 	{
@@ -9152,7 +9152,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9278.335,16.632839,12631.646};
+						position[]={9261.6387,17.288532,12652.367};
 					};
 					side="Civilian";
 					flags=7;
