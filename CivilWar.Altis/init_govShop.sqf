@@ -14,7 +14,7 @@ _fbuyItem = {
 	if ((_this select 1) == president)THEN{
 		private _price = (_this select 3) select 2;
 		private _objets = (_this select 3) select 1;
-		private _buyID = (_this select 3) select 0;// The n° of the buyed pack. In the order of _objet
+		private _buyID = (_this select 3) select 0;// The nÂ° of the buyed pack. In the order of _objet
 		private _pack = _objets select _buyID;
 			IF(govBank >= (_price select _buyID))THEN{//Have we enouth money ? $-$
 				govBank = govBank - (_price select _buyID);

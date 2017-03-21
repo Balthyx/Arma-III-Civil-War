@@ -10,7 +10,7 @@ Game duration : 3h ~ 6h.
 
 Points of interest to capture.
 
-###3 team : 
+### 3 team : 
   - __Government__:
   
     * Must keep control of its territory.
@@ -39,23 +39,23 @@ Points of interest to capture.
 
     * The __civilians__ can organize themselves as they want, around the faction they want.
 
-###Special areas:
+### Special areas:
 
   * Armurerie: Protected by the __government__, big source of weapons for the __rebels__.
   * Weapons cache: Random spawn at the start of the game, small source of weapons.
   * Industries: source of money for the faction that controls it.
   * Ressources camp: Provided resources for industries.
 
-###Economic system: 
+### Economic system: 
 
   * Industries provide money when they receive resources.
   * Factions can buy material/weapon/vehicles. (Cheaper for rebels)
 
-###UN:
+### UN:
   * Can militarily intervene against a faction if too many __civil__ murders (a group of ia).
   * Can help a faction by sending weapons, material or money.
 
-###Game flow:
+### Game flow:
 
   * __Government__: 
     Begins slightly armed, with some material, 2~3 vehicles.
@@ -69,6 +69,6 @@ Points of interest to capture.
   Once armed, the _rebels_ will be able to begin rebelliousness, capturing an area or paralising the economy of the _government_.
 
 
-###Improvements:
+### Improvements:
   * Prison system
   * Hunger / thirst
