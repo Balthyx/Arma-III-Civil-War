@@ -1,5 +1,11 @@
 _sellTruck = {
-	private _noIndustrie=(_this select 3) select 0;
+	private _noIndustrie = 0;
+	for "_i" from 0 to (count industries) do{
+		if ( (inds select _i)==(_this select 0))then{
+			_noIndustrie = _i;
+		};
+	};
+	
 	private _object = (nearestObjects [(position (industries select _noIndustrie)), ["C_Van_01_box_F"], 5]) select 0;//object is the truck to sell
 	if not(isNil "_object") THEN{
 		if (typeof _object == "C_Van_01_box_F") THEN{
