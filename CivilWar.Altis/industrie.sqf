@@ -28,7 +28,20 @@ _sellTruck = {
 				_i = _i + 1;
 			};
 			
-			hint format["Truck loaded, %1 000 $ earned.",TRUCK_REWARD];//TRUCK_REWARD defined in init.sqf
+			private _player = (_this select 1); //The one who trigger the addaction
+			
+			if( side _player == civilian)THEN{
+				_player setVariable ["cash",(_player getVariable ["cash",0]) + TRUCK_REWARD];
+			};
+			if( side _player == opfor)THEN{
+				rebelBank = rebelBank + TRUCK_REWARD;
+			};
+			if((indSide select _noIndustrie)=="WEST")THEN{
+				govBank = govBank + MULTI_TRUCK_GOV * TRUCK_REWARD;
+			}ELSE{
+				rebelBank = rebelBank + MULTI_TRUCK_REBEL * TRUCK_REWARD;
+			};
+			//hint format["Truck loaded, %1 000 $ earned.",TRUCK_REWARD];//TRUCK_REWARD defined in init.sqf
 			
 		};
 	}ELSE{hint "There is no truck in the area";};

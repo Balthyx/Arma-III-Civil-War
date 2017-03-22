@@ -1,5 +1,5 @@
-_object=["B_MRAP_01_F","B_Heli_Light_01_F"]; //List of Class name of buyable object. Example : https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
-_price=[5,20]; //Price of the object in the table upstaire. '_object select n' have a price of '_price select n'
+_object=["C_Van_01_box_F","B_MRAP_01_F","B_Heli_Light_01_F"]; //List of Class name of buyable object. Example : https://community.bistudio.com/wiki/Arma_3_CfgVehicles_WEST
+_price=[40,470,3600]; //Price of the object in the table upstaire. '_object select n' have a price of '_price select n'
 
 _fbuyVehicle = {
 	if ((_this select 1) == president)THEN{
