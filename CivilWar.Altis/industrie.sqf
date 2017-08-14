@@ -41,7 +41,7 @@ _sellTruck = {
 			}ELSE{
 				rebelBank = rebelBank + MULTI_TRUCK_REBEL * TRUCK_REWARD;
 			};
-			//hint format["Truck loaded, %1 000 $ earned.",TRUCK_REWARD];//TRUCK_REWARD defined in init.sqf
+			hint format["Truck loaded, %1 000 $ earned.",TRUCK_REWARD];//TRUCK_REWARD defined in init.sqf
 			
 		};
 	}ELSE{hint "There is no truck in the area";};
