@@ -8,7 +8,7 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=1214;
+		nextID=1235;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16;
+		nextID=19;
 	};
 	class Camera
 	{
-		pos[]={9085.2373,61.68272,12020.238};
-		dir[]={0.77530581,-0.40762806,0.48248643};
-		up[]={0.34609795,0.91313869,0.21538198};
-		aside[]={0.52837789,-2.742745e-007,-0.84904444};
+		pos[]={9920.9746,152.28737,11758.608};
+		dir[]={-0.86629152,-0.49399239,0.075974055};
+		up[]={-0.49214703,0.8694526,0.043163899};
+		aside[]={0.087375447,1.0008152e-006,0.99629134};
 	};
 };
 binarizationWanted=0;
@@ -32,6 +32,7 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Weapons_F_Pistols_Pistol_Heavy_01",
 	"A3_Weapons_F",
+	"A3_Characters_F_Orange_Facewear",
 	"A3_Weapons_F_Items",
 	"A3_Weapons_F_SMGs_SMG_02",
 	"A3_Weapons_F_Pistols_ACPC2",
@@ -63,7 +64,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -80,75 +81,82 @@ class AddonsMetaData
 		};
 		class Item2
 		{
+			className="A3_Characters_F_Orange";
+			name="Arma 3 Orange - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
 			className="A3_Weapons_F_Exp";
 			name="Arma 3 Apex - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item4
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item7
 		{
 			className="A3_Weapons_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item8
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item10
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item11
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item12
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
@@ -438,8 +446,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9288.5889,16.326654,12148.635};
-						angles[]={0,1.9060391,0};
+						position[]={9291.9414,16.322182,12147.932};
+						angles[]={0,4.9254589,0};
 					};
 					side="West";
 					flags=7;
@@ -489,7 +497,6 @@ class Mission
 					};
 					id=72;
 					type="B_officer_F";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -830,7 +837,6 @@ class Mission
 			{
 			};
 			id=71;
-			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -867,8 +873,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9297.8916,16.314247,12129.569};
-						angles[]={0,0.8835032,0};
+						position[]={9299.1758,16.312536,12130.469};
+						angles[]={0,4.0425491,0};
 					};
 					side="West";
 					flags=7;
@@ -1643,8 +1649,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10800.93,16.753883,12358.378};
-						angles[]={0,0.30503118,0};
+						position[]={10801.29,16.674274,12359.298};
+						angles[]={0,3.376811,0};
 					};
 					side="West";
 					flags=7;
@@ -9437,7 +9443,7 @@ class Mission
 			};
 			id=1119;
 			type="C_Van_01_box_F";
-			atlOffset=-3.0517578e-005;
+			atlOffset=0.001750946;
 		};
 		class Item84
 		{
@@ -9454,7 +9460,7 @@ class Mission
 			};
 			id=1120;
 			type="C_Van_01_box_F";
-			atlOffset=-0.0010299683;
+			atlOffset=0.00075149536;
 		};
 		class Item85
 		{
@@ -9471,7 +9477,7 @@ class Mission
 			};
 			id=1121;
 			type="C_Van_01_box_F";
-			atlOffset=-0.0006942749;
+			atlOffset=0.0010852814;
 		};
 		class Item86
 		{
@@ -9488,7 +9494,7 @@ class Mission
 			};
 			id=1122;
 			type="C_Van_01_box_F";
-			atlOffset=-0.014694214;
+			atlOffset=-0.012832642;
 		};
 		class Item87
 		{
@@ -9505,7 +9511,7 @@ class Mission
 			};
 			id=1123;
 			type="C_Van_01_box_F";
-			atlOffset=0.0083007813;
+			atlOffset=0.010074615;
 		};
 		class Item88
 		{
@@ -9522,6 +9528,7 @@ class Mission
 			};
 			id=1124;
 			type="C_Van_01_box_F";
+			atlOffset=0.0017776489;
 		};
 		class Item89
 		{
@@ -9538,7 +9545,7 @@ class Mission
 			};
 			id=1125;
 			type="C_Van_01_box_F";
-			atlOffset=-9.9182129e-005;
+			atlOffset=0.0016803741;
 		};
 		class Item90
 		{
@@ -9555,7 +9562,7 @@ class Mission
 			};
 			id=1126;
 			type="C_Van_01_box_F";
-			atlOffset=6.4849854e-005;
+			atlOffset=0.0018444061;
 		};
 		class Item91
 		{
@@ -9572,7 +9579,7 @@ class Mission
 			};
 			id=1127;
 			type="C_Van_01_box_F";
-			atlOffset=-3.0517578e-005;
+			atlOffset=0.0017490387;
 		};
 		class Item92
 		{

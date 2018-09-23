@@ -2,7 +2,7 @@
 
 nul = execVM "init_cache.sqf";
 //Bank, money is in $$
-govBank=2000; //Start money for the government side
+govBank=2000000; //Start money for the government side
 rebelBank=0;	//Start money for the rebel side
 //Each civilian init his personal account in 'init_civil.sqf' (not implemented now)
 
